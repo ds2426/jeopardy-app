@@ -1,0 +1,10 @@
+.category {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  
+}
+.category-header h2 {
+    font-size: 12px; 
+    text-transform: uppercase;
+    font-weight: bold;  
+}

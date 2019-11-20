@@ -1,0 +1,9 @@
+.filter-field {
+    display: inline-flex;
+    margin: 0 20px 20px 0;
+    
+}
+
+input {
+    font-size: 10px;
+}

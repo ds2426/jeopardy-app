@@ -1,0 +1,68 @@
+.clue-container h4 {
+  padding-top: 40px;
+  font-size: 60px;
+}
+.clue-container h4.daily-double {
+  font-size: 30px;
+}
+.clue-text {
+  position: absolute;
+  top: 160px;
+  left: 45px;
+  padding: 100px;
+  color: white;
+  font-size: 40px;
+  width: 95%;
+  height: 1200px;
+  z-index: 99999;
+  border: 1px solid lightgray;
+  background: darkblue;
+}
+.clue {
+  position: relative;
+  border: 1px solid lightgray;
+  background: darkblue;
+  font-size: 10px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.selected {
+  border: 2px solid yellow;
+  background: blue;
+}
+
+.text-hidden {
+  visibility: hidden;
+}
+
+.text-revealed {
+  animation-name: fade-in;
+  animation-duration: 300ms;
+  visibility: visible;
+}
+
+.button{
+  background: white;
+  color: darkblue;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0 5px;
+  outline: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "jeopardy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "react": "^16.8.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "1.9.1",
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.2.0",
+    "sinon": "^4.4.8"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.jsx",
+      "!src/index.js",
+      "!src/tempPolyfills.js"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  }
+}
